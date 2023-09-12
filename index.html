@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ar test</title>
   <script src="assets/js/aframe.js"></script>
   <script src="assets/js/img_target.js"></script>
 </head>
@@ -16,25 +16,16 @@
     <a-assets>
       <img id="card" src="assets/images/target.png" />
       <video id="main-video" autoplay loop="true" src="assets/video/jelly.mp4"></video>
-
-      <!-- <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item> -->
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane src="#main-video" 
               position="0 0 0" 
-              height="1" 
-              width="0.552" 
+              width="5" 
+              height="8.5" 
               rotation="0 0 0">
       </a-plane>
-
-      <!-- <a-gltf-model rotation="0 0 0 " 
-                    position="0 0 0.1" 
-                    scale="0.005 0.005 0.005" 
-                    src="#avatarModel" 
-                    animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
-                    > -->
     </a-entity>
   </a-scene>
 </body>
