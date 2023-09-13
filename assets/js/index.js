@@ -19,10 +19,7 @@ function playVideo () {
 AFRAME.registerComponent('mytarget', {
   init: function () {
     this.el.addEventListener('targetFound', event => {
-      console.log("target found");
-          playVideo() ;
-        
-      
+      playVideo();
     });
     this.el.addEventListener('targetLost', event => {
       console.log("target found");
