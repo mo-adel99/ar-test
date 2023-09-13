@@ -14,29 +14,17 @@
 // });
 
 
-// AFRAME.registerComponent('mytarget', {
-//   init: function() {
-//     this.onClick = this.onClick.bind(this);
-//   },
-//   play: function() {
-//     window.addEventListener('click', this.onClick);
-//   },
-//   pause: function() {
-//     window.removeEventListener('click', this.onClick);
-//   },
-//   onClick: function(evt) {
-//     var videoEl = this.el.getAttribute('material').src;
-//     if (!videoEl) {
-//       return;
-//     }
-//     this.el.object3D.visible = true;
-//     videoEl.play();
-//   }
-// });
+AFRAME.registerComponent('clickHandler', {
+  init: function () {
+    
+    this.el.addEventListener('click', event => {
+      const playBtn = document.querySelector("#thumbnail-button");
+      
+      playBtn.setAttribute("visible", false);
+      document.querySelector("#main-video").play();
+    
+    });
+  }
+});
 
 
-const playBtn = document.querySelector("#thumbnail-button");
-playBtn.addEventListener("click", function(){
-  playBtn.setAttribute("visible", false);
-  document.querySelector("#main-video").play();
-})
