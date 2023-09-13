@@ -23,9 +23,8 @@
     <a-camera  position="0 4 10"
                 look-controls="enabled: false" 
                 cursor="fuse: false; rayOrigin: mouse;" 
-                raycaster="objects: .clickable"
+                raycaster="far: 10000; objects: .clickable"
                 >
-                <!-- raycaster="far: 10000; objects: .clickable" -->
     </a-camera>
 
     <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
