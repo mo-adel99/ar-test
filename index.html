@@ -20,8 +20,16 @@
       <video id="main-video" autoplay="false" loop="true" src="assets/video/vid.mp4"></video>
     </a-assets>
 
-    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
+    <a-camera  position="0 4 10"
+                look-controls="enabled: false" 
+                cursor="fuse: false; rayOrigin: mouse;" 
+                raycaster="objects: .clickable"
+                >
+                <!-- raycaster="far: 10000; objects: .clickable" -->
     </a-camera>
+
+    <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
+    <a-light type="ambient" intensity="0.7"></a-light>
 
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane 
@@ -30,8 +38,8 @@
               playsinline
               webkit-playsinline
               position="0 0 0" 
-              width="1.1" 
-              height="1.71" 
+              width="1.07" 
+              height="1.707" 
               rotation="0 0 0">
       </a-plane>
       <a-image id="thumbnail-button" 
@@ -40,8 +48,8 @@
                 src="#thumbnail" 
                 alpha-test="0.5" 
                 position="0 0 0" 
-                width="1.1"
-                height="1.71" 
+                width="1.07"
+                height="1.707" 
                 >
       </a-image>
     </a-entity>
