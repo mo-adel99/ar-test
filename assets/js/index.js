@@ -1,13 +1,20 @@
-AFRAME.registerComponent('clickHandler', {
-  init: function () {
+// AFRAME.registerComponent('clickHandler', {
+//   init: function () {
     
-    this.el.addEventListener('click', e => {
+//     this.el.addEventListener('click', e => {
       
-      this.el.setAttribute("visible", false);
-      document.querySelector("#main-video").play();
+//       this.el.setAttribute("visible", false);
+//       document.querySelector("#main-video").play();
     
+//     });
+//   }
+// });
+
+
+AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+      this.el.addEventListener('click', function (evt) {
+      console.log('I was clicked at: ', evt.detail.intersection.point);
     });
   }
 });
-
-
