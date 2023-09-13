@@ -15,7 +15,8 @@
           device-orientation-permission-ui="enabled: false">
     <a-assets>
       <img id="card" src="assets/images/target.png" />
-      <video id="main-video" autoplay loop="true" src="assets/video/vid.mp4"></video>
+      <img id="thumbnail" src="assets/images/thumbnail.png" />
+      <video id="main-video" autoplay="false" loop="true" src="assets/video/vid.mp4"></video>
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -28,6 +29,15 @@
               height="1.7" 
               rotation="0 0 0">
       </a-video>
+      <a-image id="thumbnail-button" 
+                class="clickable" 
+                src="#thumbnail" 
+                alpha-test="0.5" 
+                position="0 0 0" 
+                width="1"
+                height="1.7" 
+                >
+      </a-image>
     </a-entity>
   </a-scene>
 </body>
