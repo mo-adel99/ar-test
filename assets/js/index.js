@@ -18,9 +18,9 @@ AFRAME.registerComponent('clickHandler', {
   init: function () {
     
     this.el.addEventListener('click', event => {
-      const playBtn = document.querySelector("#thumbnail-button");
+      // const playBtn = document.querySelector("#thumbnail-button");
       
-      playBtn.setAttribute("visible", false);
+      this.el.setAttribute("visible", false);
       document.querySelector("#main-video").play();
     
     });
