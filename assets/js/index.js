@@ -12,7 +12,10 @@ function playVideo () {
     //   document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-webm");
     //   document.querySelector("#paintandquest-video-webm").play();
     // }
-    document.querySelector("#video").play();
+
+    //   document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-mp4");
+    //   document.querySelector("#paintandquest-video-mp4").play();
+    document.querySelector("#main-video").play();
   });
 }
 
