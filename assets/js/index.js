@@ -11,15 +11,13 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 });
   
-// AFRAME.registerComponent('track-logic', {
-//   init: function () {
-//       const marker = document.querySelector("a-scene");
+AFRAME.registerComponent('track-logic', {
+  init: function () {
+      const tracked = document.querySelector(".tracked");
 
-//       marker.addEventListener("targetFound", evt => {
-//         setTimeout(evt => {
-//           this.el.setAttribute("position", marker.getAttribute("position"));
-//           this.el.setAttribute("rotation", marker.getAttribute("rotation"));
-//         }, 500)
-//       })
-//   }
-// });
+      tracked.addEventListener("targetFound", evt => {
+          this.el.setAttribute("position", tracked.getAttribute("position"));
+          this.el.setAttribute("rotation", tracked.getAttribute("rotation"));
+      })
+  }
+});
