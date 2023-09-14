@@ -11,7 +11,7 @@
 <body>
   <a-scene mindar-image="filterMinCF:0.0001; filterBeta: 0.001; imageTargetSrc: assets/images/target.mind;" 
           color-space="sRGB" 
-          renderer="colorManagement: true, physicallyCorrectLights" 
+          renderer="colorManagement: true, physicallyCorrectLights, webgl2: true;" 
           vr-mode-ui="enabled: false" 
           device-orientation-permission-ui="enabled: false"
           xrweb="disableWorldTracking: true"
@@ -22,15 +22,15 @@
       <video id="main-video" autoplay="false" loop="true" src="assets/video/vid.mp4"></video>
     </a-assets>
 
-    <a-camera  position="0 4 10"
+    <a-camera  position="0 0 0"
                 look-controls="enabled: false" 
                 cursor="fuse: false; rayOrigin: mouse;" 
                 raycaster="far: 10000; objects: .clickable"
                 >
     </a-camera>
 
-    <!-- <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
-    <a-light type="ambient" intensity="0.7"></a-light> -->
+    <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
+    <a-light type="ambient" intensity="0.7"></a-light>
 
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane 
