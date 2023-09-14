@@ -14,7 +14,8 @@
           renderer="colorManagement: true, physicallyCorrectLights, webgl2: true;" 
           vr-mode-ui="enabled: false" 
           device-orientation-permission-ui="enabled: false"
-          xrweb="disableWorldTracking: true">
+          >
+          <!-- xrweb="disableWorldTracking: true" -->
     <a-assets>
       <img id="thumbnail" src="assets/images/thumbnail.png" />
       <video id="main-video" autoplay="false" loop="true" src="assets/video/vid.mp4"></video>
@@ -36,19 +37,20 @@
               id="video"
               playsinline
               webkit-playsinline
-              position="0 0 0" 
               width="1.07" 
               height="1.707" 
-              rotation="0 0 0">
+              position="0 0 0" 
+              rotation="0 0 0"
+              >
       </a-plane>
       <a-image id="thumbnail-button" 
                 click-handler
                 class="clickable" 
                 src="#thumbnail" 
                 alpha-test="0.5" 
-                position="0 0 0" 
                 width="1.07"
                 height="1.707" 
+                position="0 0 0" 
                 >
       </a-image>
     </a-entity>
