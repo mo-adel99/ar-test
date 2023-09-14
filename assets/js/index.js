@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 });
   
-AFRAME.registerComponent('track-logic', {
-  init: function () {
-      const tracked = document.querySelector(".tracked");
+// AFRAME.registerComponent('track-logic', {
+//   init: function () {
+//       const tracked = document.querySelector(".tracked");
 
-      tracked.addEventListener("targetFound", evt => {
-          this.el.setAttribute("position", tracked.getAttribute("position"));
-          this.el.setAttribute("rotation", tracked.getAttribute("rotation"));
-      })
-  }
-});
+//       tracked.addEventListener("targetFound", evt => {
+//           this.el.setAttribute("position", tracked.getAttribute("position"));
+//           this.el.setAttribute("rotation", tracked.getAttribute("rotation"));
+//       })
+//   }
+// });
