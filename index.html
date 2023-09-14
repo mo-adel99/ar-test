@@ -9,9 +9,9 @@
   <script src="assets/js/index.js"></script>
 </head>
 <body>
-  <a-scene mindar-image=" imageTargetSrc: assets/images/target.mind;" 
+  <a-scene mindar-image="filterMinCF:0.0001; filterBeta: 0.001; imageTargetSrc: assets/images/target.mind;" 
           color-space="sRGB" 
-          renderer="colorManagement: true, physicallyCorrectLights, webgl2: true;" 
+          renderer="colorManagement: true, physicallyCorrectLights" 
           vr-mode-ui="enabled: false" 
           device-orientation-permission-ui="enabled: false"
           xrweb="disableWorldTracking: true"
